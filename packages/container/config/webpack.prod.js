@@ -16,7 +16,8 @@ const prodConfig = {
     new ModuleContainerPlugin({
       name: "container",
       remotes: {
-        marketing: `marketing@/marketing/latest/remoteEntry.js`
+        marketing: `marketing@/marketing/latest/remoteEntry.js`,
+        auth: "auth@auth/latest/remoteEntry.js"
       },
       shared: packageJson.dependencies
     })
